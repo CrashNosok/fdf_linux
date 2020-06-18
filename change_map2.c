@@ -61,12 +61,12 @@ void	updown(t_fdf *data, float koef)
 
 void	move_map(int key, t_fdf *data)
 {
-	if (key == 126)
+	if (key == 65362)
 		data->shift_y -= 10;
-	else if (key == 125)
+	else if (key == 65364)
 		data->shift_y += 10;
-	else if (key == 124)
+	else if (key == 65363)
 		data->shift_x += 10;
-	else if (key == 123)
+	else if (key == 65361)
 		data->shift_x -= 10;
 }

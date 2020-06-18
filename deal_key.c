@@ -4,25 +4,25 @@ int	deal_key(int k, t_fdf *data)
 {
 	if (is_key(k))
 	{
-		if (k == 53)
+		if (k == 65307)
 			close_win(data);
-		if (k == 15 || k == 17 || k == 16 || k == 3 || k == 5 || k == 4)
+		if (k == 114 || k == 116 || k == 121 || k == 102 || k == 103 || k == 104)
 			rotate_map(k, data);
-		if (k == 14)
+		if (k == 101)
 			change_size(data, 2);
-		if (k == 2)
+		if (k == 100)
 			change_size(data, -2);
-		if (k == 49)
+		if (k == 32)
 			change_projection(data);
-		if (k == 12)
+		if (k == 113)
 			updown_multi(data, 1.5);
-		if (k == 0)
+		if (k == 97)
 			updown_multi(data, 0.9);
-		if (k == 13)
+		if (k == 119)
 			updown(data, 10);
-		if (k == 1)
+		if (k == 115)
 			updown(data, -10);
-		if (k == 123 || k == 126 || k == 124 || k == 125)
+		if (k == 65361 || k == 65362 || k == 65363 || k == 65364)
 			move_map(k, data);
 		redraw_map(data);
 	}
